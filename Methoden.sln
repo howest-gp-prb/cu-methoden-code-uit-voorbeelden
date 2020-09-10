@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methoden.WPF", "Methoden.WPF\Methoden.WPF.csproj", "{11F02405-1AB0-4E68-A9C1-F39580E83AA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methoden.WPF", "Methoden.WPF\Methoden.WPF.csproj", "{11F02405-1AB0-4E68-A9C1-F39580E83AA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerekenSom.WPF", "BerekenSom.WPF\BerekenSom.WPF.csproj", "{C02C8FBB-D421-432C-A3F9-2B84C849EFD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BerekenSom.WPF", "BerekenSom.WPF\BerekenSom.WPF.csproj", "{C02C8FBB-D421-432C-A3F9-2B84C849EFD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerekenTotaal.WPF", "BerekenTotaal.WPF\BerekenTotaal.WPF.csproj", "{518F061B-524D-451B-BA25-F7EB86748143}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BerekenTotaal.WPF", "BerekenTotaal.WPF\BerekenTotaal.WPF.csproj", "{518F061B-524D-451B-BA25-F7EB86748143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VreemdeMuntBerekening.WPF", "VreemdeMuntBerekening.WPF\VreemdeMuntBerekening.WPF.csproj", "{D147E398-EDE4-4CE9-99B8-C66053BE82EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{518F061B-524D-451B-BA25-F7EB86748143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{518F061B-524D-451B-BA25-F7EB86748143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{518F061B-524D-451B-BA25-F7EB86748143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D147E398-EDE4-4CE9-99B8-C66053BE82EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D147E398-EDE4-4CE9-99B8-C66053BE82EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D147E398-EDE4-4CE9-99B8-C66053BE82EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D147E398-EDE4-4CE9-99B8-C66053BE82EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

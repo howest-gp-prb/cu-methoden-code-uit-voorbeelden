@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtGetalLinks" HorizontalAlignment="Left" Margin="29,25,0,0" Text="0" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="23"/>
+        <TextBox x:Name="txtLeftNumber" HorizontalAlignment="Left" Margin="29,25,0,0" Text="0" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="23"/>
 
-        <TextBox x:Name="txtGetalRechts" HorizontalAlignment="Left" Margin="135,25,0,0" Text="0" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="23"/>
-        <Button x:Name="btnBerekenSom" Content="=" HorizontalAlignment="Left" Margin="212,27,0,0" VerticalAlignment="Top" Click="btnBerekenSom_Click"/>
+        <TextBox x:Name="txtRightNumber" HorizontalAlignment="Left" Margin="135,25,0,0" Text="0" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="23"/>
+        <Button x:Name="btnCalculateSum" Content="=" HorizontalAlignment="Left" Margin="212,27,0,0" VerticalAlignment="Top" Click="BtnCalculateSum_Click"/>
         <Label Content="+" HorizontalAlignment="Left" Margin="107,24,0,0" VerticalAlignment="Top"/>
 
     </Grid>

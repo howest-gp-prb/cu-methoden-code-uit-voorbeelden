@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace BerekenSom.WPF
 {
@@ -20,34 +7,37 @@ namespace BerekenSom.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        int som;
+        int sum;
 
         public MainWindow()
         {
             InitializeComponent();
         }
-        int BerekenSommen(int getalLinks, int getalRechts)
+
+        int CalculateSum(int numberOne, int numberTwo)
         {
-            return getalLinks + getalRechts;
-        }
-        int BerekenSommen(string getalLinks, string getalRechts)
-        {
-            int links = int.Parse(getalLinks);
-            int rechts = int.Parse(getalRechts);
-            return BerekenSommen(links, rechts);
+            return numberOne + numberTwo;
         }
 
-        private void btnBerekenSom_Click(object sender, RoutedEventArgs e)
+        int CalculateSum(string numberOneText, string numberTwoText)
         {
-            int links = int.Parse(txtGetalLinks.Text);
-            int rechts = int.Parse(txtGetalRechts.Text);
-            som = BerekenSommen(links, rechts);
-            MessageBox.Show("De som van " + links + " en " + rechts + " is " + som, "Som berekenen");
-
+            int numberOne = int.Parse(numberOneText);
+            int numberTwo = int.Parse(numberTwoText);
+            return CalculateSum(numberOne, numberTwo);
         }
+
         void ScopeText()
         {
-            MessageBox.Show("De som was: " + som);
+            MessageBox.Show("De som was: " + sum);
+        }
+
+        private void BtnCalculateSum_Click(object sender, RoutedEventArgs e)
+        {
+            int leftNumber = int.Parse(txtLeftNumber.Text);
+            int rightNumber = int.Parse(txtRightNumber.Text);
+            sum = CalculateSum(leftNumber, rightNumber);
+            MessageBox.Show("De som van " + leftNumber + " en " + rightNumber + " is " + sum, "Som berekenen");
+
         }
 
     }

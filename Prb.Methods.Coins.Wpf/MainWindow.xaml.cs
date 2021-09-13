@@ -25,12 +25,6 @@ namespace VreemdeMuntBerekening.WPF
             InitializeComponent();
         }
 
-        private void btnCalculate_Click(object sender, RoutedEventArgs e)
-        {
-            tblEuro.Text = GenerateReport(txtNetEuro.Text, txtVAT.Text);
-            tblDollar.Text = GenerateReport(txtNetEuro.Text, txtVAT.Text, txtExchange.Text, "Dollar");
-        }
-
         string GenerateReport(string netInText, string vatInText, string exchangeRateInText = "1", string currency = "Euro")
         {
             double net = double.Parse(netInText);
@@ -46,5 +40,12 @@ namespace VreemdeMuntBerekening.WPF
 
             return report;
         }
+
+        private void BtnCalculate_Click(object sender, RoutedEventArgs e)
+        {
+            tblEuro.Text = GenerateReport(txtNetEuro.Text, txtVAT.Text);
+            tblDollar.Text = GenerateReport(txtNetEuro.Text, txtVAT.Text, txtExchange.Text, "Dollar");
+        }
+
     }
 }

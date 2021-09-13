@@ -13,7 +13,7 @@
         <Label Content="BTW-tarief :  " HorizontalAlignment="Left" Margin="45,59,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtVAT" HorizontalAlignment="Left" Margin="136,63,0,0" Text="21" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
         <Label Content="%" HorizontalAlignment="Left" Margin="189,59,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCalculate" Content="Bereken" HorizontalAlignment="Left" Height="24" Margin="45,105,0,0" VerticalAlignment="Top" Width="172" Click="btnCalculate_Click"/>
+        <Button x:Name="btnCalculate" Content="Bereken" HorizontalAlignment="Left" Height="24" Margin="45,105,0,0" VerticalAlignment="Top" Width="172" Click="BtnCalculate_Click"/>
         <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" Margin="36,146,487,10">
             <Grid>
                 <Label Content="Resultaat €" HorizontalAlignment="Left" Margin="9,10,0,0" VerticalAlignment="Top"/>

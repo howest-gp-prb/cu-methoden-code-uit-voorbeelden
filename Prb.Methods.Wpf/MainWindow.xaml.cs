@@ -22,7 +22,5 @@ namespace Methoden.WPF
         {
             MessageBox.Show("Het land is " + land);
         }
-
-
     }
 }

@@ -26,7 +26,7 @@ namespace BerekenSom.WPF
             return CalculateSum(numberOne, numberTwo);
         }
 
-        void ScopeText()
+        void ScopeTest()
         {
             MessageBox.Show("De som was: " + sum);
         }

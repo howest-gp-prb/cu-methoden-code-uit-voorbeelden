@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnToonLand" Content="Toon land" HorizontalAlignment="Left" Height="33" Margin="82,46,0,0" VerticalAlignment="Top" Width="104" Click="btnToonLand_Click"/>
+        <Button x:Name="btnShowCountry" Content="Toon land" HorizontalAlignment="Left" Height="33" Margin="82,46,0,0" VerticalAlignment="Top" Width="104" Click="BtnShowCountry_Click"/>
 
     </Grid>
 </Window>

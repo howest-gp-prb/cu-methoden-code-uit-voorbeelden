@@ -25,36 +25,29 @@ namespace BerekenTotaal.WPF
             InitializeComponent();
         }
 
-        private void BtnBereken_Click(object sender, RoutedEventArgs e)
+        decimal CalculateVat(float vatRate, decimal priceExcl)
         {
-            float tarief;
-            decimal prijsExcl;
-            tarief = float.Parse(txtTarief.Text);
-            prijsExcl = decimal.Parse(txtExcl.Text);
-            tbkBerekening.Text = BtwBerekeningTonen(tarief, prijsExcl);
+            decimal vat = priceExcl * (decimal)vatRate / 100;
+            return vat;
         }
-        decimal BtwBedragBerekenen(float tarief, decimal prijsExcl)
+        string ShowVatCalculation(float vatRate, decimal priceExcl)
         {
-            decimal btwBedrag;
-            btwBedrag = prijsExcl * (decimal)tarief / 100;
-            return btwBedrag;
-        }
-        string BtwBerekeningTonen(float tarief, decimal prijsExcl)
-        {
-            string samenvatting = "";
-            decimal btwBedrag;
-            decimal prijsIncl;
-            btwBedrag = BtwBedragBerekenen(tarief, prijsExcl);
-            prijsIncl = prijsExcl + btwBedrag;
-            samenvatting = "Berekening BTW\n\n" +
-                $"BTW excl.\t€ {prijsExcl.ToString("0.00")}\n" +
-                $"BTW tarief\t{tarief} %\n" +
-                $"BTW bedrag\t€ {btwBedrag.ToString("0.00")}\n" +
-                $"BTW incl\t\t€ {prijsIncl.ToString("0.00")}\n";
-            return samenvatting;
+            decimal vat = CalculateVat(vatRate, priceExcl);
+            decimal priceIncl = priceExcl + vat;
+            string summary = "Berekening BTW\n\n" +
+                $"BTW excl.\t€ {priceExcl.ToString("0.00")}\n" +
+                $"BTW tarief\t{vatRate} %\n" +
+                $"BTW bedrag\t€ {vat.ToString("0.00")}\n" +
+                $"BTW incl\t\t€ {priceIncl.ToString("0.00")}\n";
+            return summary;
         }
 
-
-
+        private void BtnCalculate_Click(object sender, RoutedEventArgs e)
+        {
+            float vatRate = float.Parse(txtVatRate.Text);
+            decimal priceExcl = decimal.Parse(txtPriceExcl.Text);
+            tbkCalculation.Text = ShowVatCalculation(vatRate, priceExcl);
+        }
+        
     }
 }

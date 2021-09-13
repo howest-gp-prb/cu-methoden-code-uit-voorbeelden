@@ -9,10 +9,10 @@
     <Grid>
         <Label Content="BTW-tarief : " HorizontalAlignment="Left" Margin="53,28,0,0" VerticalAlignment="Top"/>
         <Label Content="Bedrag excl. BTW : " HorizontalAlignment="Left" Margin="53,59,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtTarief" HorizontalAlignment="Left" Margin="180,35,0,0" Text="21" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Height="19"/>
-        <TextBox x:Name="txtExcl" HorizontalAlignment="Left" Margin="180,62,0,0" Text="321,5" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Height="19"/>
-        <Button x:Name="btnBereken" Content="Bereken" HorizontalAlignment="Left" Margin="62,100,0,0" VerticalAlignment="Top" Click="BtnBereken_Click"/>
-        <TextBlock x:Name="tbkBerekening" HorizontalAlignment="Left" Height="214" Margin="62,146,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
+        <TextBox x:Name="txtVatRate" HorizontalAlignment="Left" Margin="180,35,0,0" Text="21" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Height="19"/>
+        <TextBox x:Name="txtPriceExcl" HorizontalAlignment="Left" Margin="180,62,0,0" Text="321,5" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Height="19"/>
+        <Button x:Name="btnCalculate" Content="Bereken" HorizontalAlignment="Left" Margin="62,100,0,0" VerticalAlignment="Top" Click="BtnCalculate_Click"/>
+        <TextBlock x:Name="tbkCalculation" HorizontalAlignment="Left" Height="214" Margin="62,146,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
 
     </Grid>
 </Window>

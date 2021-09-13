@@ -18,9 +18,9 @@ namespace Methoden.WPF
             ShowCountry(country);
         }
 
-        void ShowCountry(string land)
+        void ShowCountry(string country)
         {
-            MessageBox.Show("Het land is " + land);
+            MessageBox.Show("Het land is " + country);
         }
     }
 }
